@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#33000000">  <!-- màu ripple (mờ đen nhẹ) -->
+
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#CCCCCC" /> <!-- nền xám nhạt -->
+            <corners android:radius="16dp" /> <!-- bo góc mềm mại -->
+        </shape>
+    </item>
+
+</ripple>

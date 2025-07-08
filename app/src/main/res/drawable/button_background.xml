@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <solid android:color="?attr/colorPrimary" /> <!-- màu nền nút -->
+    <corners android:radius="10dp" /> <!-- bo góc 0dp = vuông -->
+</shape>

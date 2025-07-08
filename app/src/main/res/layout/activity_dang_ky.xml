@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Nền máy bay mờ -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/airplane_background"
+        android:scaleType="centerCrop"
+        android:alpha="0.25" />
+
+    <!-- Lớp mờ tối để dễ đọc chữ -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đăng ký"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="32dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@drawable/edit_text_background"
+                android:gravity="center_vertical"
+                android:paddingStart="12dp"
+                android:layout_marginBottom="16dp">
+
+
+
+                <EditText
+                    android:id="@+id/edt_username"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="Tên đăng nhập"
+                    android:textColor="#A9A9A9"
+                    android:textColorHint="#CCCCCC"
+                    android:background="@android:color/transparent"
+                    android:textSize="16sp"
+                    android:inputType="textPersonName"
+                    android:paddingStart="12dp" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_profile"
+                    android:layout_marginEnd="10dp"
+                    app:tint="#A9A9A9" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@drawable/edit_text_background"
+                android:gravity="center_vertical"
+                android:paddingStart="12dp"
+                android:layout_marginBottom="16dp">
+
+
+                <EditText
+                    android:id="@+id/edt_password"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="Mật khẩu"
+                    android:textColor="#A9A9A9"
+                    android:textColorHint="#CCCCCC"
+                    android:background="@android:color/transparent"
+                    android:textSize="16sp"
+                    android:inputType="textPassword"
+                    android:paddingStart="12dp" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_password"
+                    app:tint="#A9A9A9" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@drawable/edit_text_background"
+                android:gravity="center_vertical"
+                android:paddingStart="12dp"
+                android:layout_marginBottom="16dp">
+
+                <EditText
+                    android:id="@+id/edtHoTen"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="Họ tên"
+                    android:textColor="#A9A9A9"
+                    android:textColorHint="#CCCCCC"
+                    android:background="@android:color/transparent"
+                    android:textSize="16sp"
+                    android:inputType="textPersonName"
+                    android:paddingStart="12dp" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_edit"
+                    app:tint="#A9A9A9" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@drawable/edit_text_background"
+                android:gravity="center_vertical"
+                android:paddingStart="12dp"
+                android:layout_marginBottom="16dp">
+
+
+                <EditText
+                    android:id="@+id/edt_email"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="Email"
+                    android:textColor="#A9A9A9"
+                    android:textColorHint="#CCCCCC"
+                    android:background="@android:color/transparent"
+                    android:textSize="16sp"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="12dp" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_email"
+                    app:tint="#A9A9A9" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@drawable/edit_text_background"
+                android:gravity="center_vertical"
+                android:paddingStart="12dp"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:focusable="true">
+
+
+                <EditText
+                    android:id="@+id/edtNgaySinh"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="Ngày sinh"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:textColor="#A9A9A9"
+                    android:textColorHint="#CCCCCC"
+                    android:background="@android:color/transparent"
+                    android:textSize="16sp"
+                    android:paddingStart="12dp" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_calendar"
+                    app:tint="#A9A9A9" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@drawable/edit_text_background"
+                android:gravity="center_vertical"
+                android:paddingStart="12dp"
+                android:layout_marginBottom="24dp">
+
+                <EditText
+                    android:id="@+id/edt_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="Số điện thoại"
+                    android:textColor="#A9A9A9"
+                    android:textColorHint="#CCCCCC"
+                    android:background="@android:color/transparent"
+                    android:textSize="16sp"
+                    android:inputType="phone"
+                    android:paddingStart="12dp" />
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_phone"
+                    app:tint="#A9A9A9" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_dang_ky"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Đăng ký"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/button_rounded" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

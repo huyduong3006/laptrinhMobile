@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Disabled state -->
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <solid android:color="#D7CCC8"/> <!-- Cam xám -->
+            <corners android:radius="12dp" />
+        </shape>
+    </item>
+
+    <!-- Pressed state -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#EF6C00"/> <!-- Cam đậm khi bấm -->
+            <corners android:radius="12dp"/>
+        </shape>
+    </item>
+
+    <!-- Default state -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FFB74D"/> <!-- Cam sáng mặc định -->
+            <corners android:radius="12dp"/>
+        </shape>
+    </item>
+</selector>

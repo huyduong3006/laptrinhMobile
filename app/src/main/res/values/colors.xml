@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_blue_background">#E0F7FA</color>
+    <color name="primary">#8B5CF6</color>
+    <color name="surface_card">#FFFFFF</color>
+    <color name="background_light">#F5F5F5</color>
+    <color name="text_primary">#1F1F1F</color>
+    <color name="text_secondary">#777777</color>
+    <color name="accent">#A388F3</color>
+    <color name="light_blue_border">#90CAF9</color>
+    <color name="light_blue">#90CAF9</color>
+    <color name="semi_transparent_black">#CC000000</color>
+    <color name="semi_transparent_black_1">#555555</color>
+    <color name="gray_very_light">#F2F2F2</color>
+    <color name="primaryColor">#2C3E50</color>
+    <color name="secondaryColor">#B0BEC5</color>
+    <color name="bgColor">#FAFAFA</color>
+    <color name="textColorPrimary">#212121</color>
+
+</resources>

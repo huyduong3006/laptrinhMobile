@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    android:paddingTop="24dp"
+    android:paddingBottom="24dp"
+    android:background="#FAFAFA"
+    tools:context=".activities.DatVeActivity">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ĐẶT VÉ CHUYẾN BAY"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#1A237E"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/flightInfoHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:background="@drawable/edittext_outline"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintTop_toBottomOf="@id/titleText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/flightRoute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Từ Hà Nội đến TP. Hồ Chí Minh"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#1A237E"
+            android:paddingBottom="6dp" />
+
+        <TextView
+            android:id="@+id/flightDates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ngày đi: 01/06/2025 - Ngày về: 05/06/2025"
+            android:textSize="16sp"
+            android:textColor="#333333" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ticketInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintTop_toBottomOf="@id/flightInfoHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:text="Thông tin vé"
+            android:textSize="16sp"
+            android:textColor="#1A237E"
+            android:textStyle="bold"
+            android:paddingBottom="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/ticketRoute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chuyến bay: Hà Nội - TP. Hồ Chí Minh"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:id="@+id/ticketDates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ngày: 01/06/2025 - 05/06/2025"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:text="Loại vé"
+            android:textSize="16sp"
+            android:textColor="#1A237E"
+            android:textStyle="bold"
+            android:paddingBottom="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup_seatType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <RadioButton
+                android:id="@+id/radio_pho_thong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phổ thông"
+                android:textSize="12sp"
+                android:buttonTint="#1A237E"/>
+
+            <RadioButton
+                android:id="@+id/radio_pho_thong_dac_biet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PT đặc biệt"
+                android:textSize="12sp"
+                android:buttonTint="#1A237E"
+                android:layout_marginStart="12dp"/>
+
+            <RadioButton
+                android:id="@+id/radio_thuong_gia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thương gia"
+                android:textSize="12sp"
+                android:buttonTint="#1A237E"
+                android:layout_marginStart="12dp"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bookingSection"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/ticketInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:text="Phương thức thanh toán"
+            android:textSize="16sp"
+            android:textColor="#1A237E"
+            android:textStyle="bold"
+            android:paddingBottom="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:id="@+id/paymentMethodGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:orientation="horizontal"
+            android:layout_marginStart="35dp"
+            android:layout_marginBottom="12dp">
+
+            <RadioButton
+                android:id="@+id/radioButton_Chuyenkhoan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chuyển khoản" />
+
+            <RadioButton
+                android:id="@+id/radioButton_Quetthe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quét thẻ" />
+        </RadioGroup>
+
+
+        <TextView
+            android:text="Chi tiết thanh toán"
+            android:textSize="16sp"
+            android:textColor="#1A237E"
+            android:textStyle="bold"
+            android:paddingBottom="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Giá tiền"
+                android:textSize="14sp"
+                android:textColor="#333333" />
+
+            <TextView
+                android:id="@+id/txtGiaTien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.500.000 VNĐ"
+                android:textSize="14sp"
+                android:textColor="#333333" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Số lượng vé"
+                android:textSize="14sp"
+                android:textColor="#333333" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageButton
+                    android:id="@+id/btnDecrease"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_minus"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Giảm số lượng"
+                    android:scaleType="centerInside" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextQuantity"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:inputType="number"
+                    android:text="1"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_outline"
+                    android:padding="10dp" />
+
+                <ImageButton
+                    android:id="@+id/btnIncrease"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_plus"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Tăng số lượng"
+                    android:scaleType="centerInside" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Thuế VAT"
+                android:textSize="14sp"
+                android:textColor="#333333" />
+
+            <TextView
+                android:id="@+id/txtTax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10%"
+                android:textSize="14sp"
+                android:textColor="#333333" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tổng tiền:"
+                android:textSize="16sp"
+                android:textColor="#1A237E"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/totalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1,650,000 VNĐ"
+                android:textSize="16sp"
+                android:textColor="#1A237E"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnDatVe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ĐẶT VÉ NGAY"
+            android:backgroundTint="#1A237E"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:padding="12dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
